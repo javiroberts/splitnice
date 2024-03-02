@@ -3,7 +3,7 @@
 	export let text: string;
 </script>
 
-<div class="navbar-button flex flex-col items-center justify-around">
+<button class="navbar-button flex flex-col items-center justify-around" on:click>
 	<i class="{icon} text-2xl text-cyan-950"></i>
 	<p class="text-xs font-light text-cyan-950">{text}</p>
-</div>
+</button>

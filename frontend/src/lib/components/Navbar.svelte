@@ -1,0 +1,17 @@
+<script lang="ts">
+	import { goto } from '$app/navigation';
+
+	import NavbarButton from 'frontend/src/lib/components/NavbarButton.svelte';
+	import NavbarButtonPlus from 'frontend/src/lib/components/NavbarButtonPlus.svelte';
+	const navigate = (location: string) => (e: Event) => {
+		goto(location);
+	}
+</script>
+
+<div class="h-16 p-2 flex justify-between items-center bg-cyan-50">
+	<NavbarButton icon="ri-user-line" text="Friends" on:click={navigate("/friends")} />
+	<NavbarButton icon="ri-group-line" text="Groups" on:click={navigate("/groups")} />
+	<NavbarButtonPlus on:click={navigate("/new")} />
+	<NavbarButton icon="ri-bar-chart-horizontal-line" text="Activity" on:click={navigate("/activity")} />
+	<NavbarButton icon="ri-profile-line" text="Account" on:click={navigate("/account")} />
+</div>
