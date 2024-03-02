@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SummaryItem from 'frontend/src/lib/components/SummaryItem.svelte';
+	import SummaryItem from '$lib/components/SummaryItem.svelte';
 </script>
 
 <div class="summary p-2">

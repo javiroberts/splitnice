@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 
-	import NavbarButton from 'frontend/src/lib/components/NavbarButton.svelte';
-	import NavbarButtonPlus from 'frontend/src/lib/components/NavbarButtonPlus.svelte';
-	const navigate = (location: string) => (e: Event) => {
+	import NavbarButton from '$lib/components/NavbarButton.svelte';
+	import NavbarButtonPlus from '$lib/components/NavbarButtonPlus.svelte';
+	const navigate = (location: string) => () => {
 		goto(location);
 	}
 </script>
