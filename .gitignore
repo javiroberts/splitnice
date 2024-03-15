@@ -1,9 +1,9 @@
 .DS_Store
 .idea
 node_modules
-/frontend/build
-/frontend/.svelte-kit
-/frontend/package
+build
+.svelte-kit
+package
 .env
 .env.*
 !.env.example
